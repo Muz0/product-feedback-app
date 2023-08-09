@@ -1,9 +1,4 @@
 const data = [
-  // currentUser: {
-  //   name: "John Doe",
-  //   userName: "@jonathandoecom",
-  //   // profilePic: "user-images/image-john.jpg",
-  // },
   {
     id: 1,
     upvote_count: 112,

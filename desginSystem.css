@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+/* Fonts */
+
+@import url(./assets/fonts/fonts.css);
+
 /* Variables */
 :root {
   --purple: #ad1fea;
@@ -23,50 +26,6 @@
   margin: auto;
 }
 
-/* Fonts */
-.header1 {
-  font-size: 24px;
-  line-height: 35px;
-  letter-spacing: -0.33;
-  font-weight: bold;
-}
-
-
-.header2 {
-  font-size: 20px;
-  line-height: 29px;
-  letter-spacing: -0.25;
-  font-weight: bold;
-}
-
-.header3 {
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: -0.25;
-  font-weight: bold;
-}
-
-.header4 {
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.2;
-  font-weight: bold;
-}
-
-.body1 {
-  font-size: 16px;
-  line-height: 23px;
-}
-
-.body2 {
-  font-size: 15px;
-  line-height: 22px;
-}
-
-.body3 {
-  font-size: 13px;
-  line-height: 19px;
-}
 
 /* Buttons */
 .btn1 {
