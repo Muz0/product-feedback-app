@@ -5,9 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./desginSystem.css" />
+
+    <style>
+      .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+      }
+
+      /* Extra small devices (phones) */
+      @media (max-width: 575.98px) {
+        .container {
+          max-width: 100%;
+        }
+      }
+
+      /* Small devices (landscape phones, less than 768px) */
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .container {
+          max-width: 540px;
+        }
+      }
+
+      /* Medium devices (tablets, less than 992px) */
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .container {
+          max-width: 720px;
+        }
+      }
+
+      /* Large devices (desktops, less than 1200px) */
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .container {
+          max-width: 960px;
+        }
+      }
+
+      /* Extra large devices (large desktops) */
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1140px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="root">
+    <div id="root" class="container">
       <main class="main-app">
         <div id="sidebar-sugg-layout">
           <div id="mobile-header">
@@ -133,7 +179,7 @@
                     ></path>
                   </svg>
                 </button>
-                
+
                 <div class="dropdown-container hide">
                   <button class="dropdown-text" value="Most Upvotes">
                     <p class="body1">Most Upvotes</p>
@@ -222,9 +268,8 @@
         </div>
       </main>
     </div>
-    <!-- <script src="./data/suggestions.js"></script> -->
 
-    <!-- <script src="./data/data.js" type="module"></script> -->
+    <script src="./data/localData.js"></script>
     <script type="module" src="./data/MainPageContainerRoadmap.js"></script>
     <script src="./data/suggRender.js" type="module"></script>
   </body>

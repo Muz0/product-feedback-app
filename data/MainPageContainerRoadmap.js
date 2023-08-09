@@ -1,7 +1,5 @@
-import Data from './data.js';
-// import jsonData from './data.json' assert { type: "json" };
+const Data = JSON.parse(window.localStorage.getItem("data"));
 
-// const Data = new Array(...jsonData.productRequests);
 
 const states = ['suggestion', 'live', 'planned', 'in-progress'];
 

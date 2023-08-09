@@ -1,6 +1,8 @@
 console.log("Roadmap.js");
 
-import Data from "./data.js";
+// import Data from "./data.js";
+
+const Data = JSON.parse(window.localStorage.getItem("data"));
 
 let planned = Data.filter((item) => item.state === "planned");
 let inProgress = Data.filter((item) => item.state === "in-progress");

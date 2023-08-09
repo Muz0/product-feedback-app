@@ -1,8 +1,6 @@
-import Data from "./data.js";
-// import jsonData from './data.json' assert { type: "json" };
-// const Data = new Array (jsonData.ProductRequests);
-// console.log(Data);
-// console.log(typeof Data);
+// import Data from "./data.js";
+
+const Data = JSON.parse(window.localStorage.getItem("data"));
 
 const container = document.getElementById("all-suggs");
 let currentFilter = "All"; // Keeping track of the current filter
@@ -19,6 +17,9 @@ function toggleDropdown() {
   const dropdown = document.querySelector(".dropdown-container");
   dropdown.classList.toggle("hide");
 }
+
+
+
 
 // Function to sort Data
 function sortData(DataArray, sortBy) {
@@ -130,6 +131,7 @@ document.querySelectorAll("#tags-container .tag").forEach((button) => {
 
 // Onclick event to handle the dropdown visibility
 document.querySelector(".sort-by").addEventListener("click", toggleDropdown);
+
 
 // Event listener for dropdown buttons
 document.querySelectorAll(".dropdown-text").forEach((button) => {
