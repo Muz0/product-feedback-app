@@ -1,0 +1,19 @@
+{
+  "name": "product-feedback-app",
+  "version": "1.0.0",
+  "description": "IATC semi-final JS project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muz0/product-feedback-app.git"
+  },
+  "author": "Muz0",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Muz0/product-feedback-app/issues"
+  },
+  "homepage": "https://github.com/Muz0/product-feedback-app#readme"
+}

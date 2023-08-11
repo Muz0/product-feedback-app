@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Feedback</title>
+    <link rel="stylesheet" href="./desginSystem.css" />
+  </head>
+  <body>
+    <div id="root">
+      <main class="main-app">
+        <div id="roadmap-page">
+          <div class="modal-container">
+            <form class="modal-content">
+              <button class="goback-grey header4">
+                <svg
+                  id="left-arrow"
+                  width="7"
+                  height="10"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 9L2 5l4-4"
+                    stroke="#4661e6"
+                    stroke-width="2"
+                    fill="none"
+                    fill-rule="evenodd"
+                  ></path></svg
+                >Go Back
+              </button>
+              <div class="modal-body">
+                <div class="modal-icon">
+                  <svg
+                    width="56"
+                    height="56"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <radialGradient
+                        cx="103.9%"
+                        cy="-10.387%"
+                        fx="103.9%"
+                        fy="-10.387%"
+                        r="166.816%"
+                        id="a"
+                      >
+                        <stop stop-color="#E84D70" offset="0%"></stop>
+                        <stop stop-color="#A337F6" offset="53.089%"></stop>
+                        <stop stop-color="#28A7ED" offset="100%"></stop>
+                      </radialGradient>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                      <circle fill="url(#a)" cx="28" cy="28" r="28"></circle>
+                      <path
+                        fill="#FFF"
+                        fill-rule="nonzero"
+                        d="M30.343 36v-5.834h5.686v-4.302h-5.686V20h-4.597v5.864H20v4.302h5.746V36z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <h1 class="header1 modal-bold">Create New Feedback</h1>
+                <div class="fb-container">
+                  <h4 class="header4 modal-bold">Feedback Title</h4>
+                  <p class="body2 modal-light">
+                    Add a short, descriptive headline
+                  </p>
+                  <input type="text" class="fb-title-input" value="" />
+                </div>
+                <div class="fb-container">
+                  <h4 class="header4 modal-bold">Category</h4>
+                  <p class="body2 modal-light">
+                    Choose a category for your feedback
+                  </p>
+                  <div class="fb-dropdown-wrapper">
+                    <div class="fb-dropdown">
+                      <div class="fb-select-trigger body2">Feature</div>
+                      <div class="options">
+                        <span class="option body1"
+                          >Feature<svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="11"
+                          >
+                            <path
+                              fill="none"
+                              stroke="#AD1FEA"
+                              stroke-width="2"
+                              d="M1 5.233L4.522 9 12 1"
+                            ></path></svg></span
+                        ><span class="option body1">UI</span
+                        ><span class="option body1">UX</span
+                        ><span class="option body1">Enhancement</span
+                        ><span class="option body1">Bug</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="fb-container-lg">
+                  <h4 class="header4 modal-bold">Feedback Detail</h4>
+                  <p class="body2 modal-light">
+                    Include any specific comments on what should be improved,
+                    added, etc.
+                  </p>
+                  <textarea class="fb-detail-input"></textarea>
+                </div>
+                <p class="invisible">Can't leave any fields empty</p>
+                <div class="modal-footer">
+                  <button class="btn3 header4 modal-cancel">Cancel</button
+                  ><button class="btn1 header4 modal-add">Add Feedback</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="./data/addFeedback.js"></script>
+  </body>
+</html>
